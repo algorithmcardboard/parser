@@ -3,7 +3,7 @@ angular.module('parser',[])
   $scope.charAt = -1;
 
   $scope.hai = function(){
-    if($scope.charAt === -1){
+    if($scope.charAt == -1){
       $scope.parsed = "Incorrect index value.  It cannot be -1";
       return;
     }
