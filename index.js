@@ -4,6 +4,8 @@ angular.module('parser',[])
     var regExp = new RegExp($scope.content.charAt($scope.charAt), "g");
     var escaped = $scope.content.replace(regExp, "\\n");
     console.log('escaped is ', escaped);
-    $scope.parsed = escaped;
+    $scope.parsed = JSON.stringify({
+      content:escaped
+    });
   };
 }]);
