@@ -5,10 +5,14 @@
 </head>
 <body ng-controller="parserController">
 <form >
+  Author <input type="text" ng-model="author" />
+  <br/>
+  Title <input type="text" ng-model="title" />
+  <br/>
   <textarea ng-model="content" rows="20" cols="140"></textarea>
   <br/>
-  <input type="text" ng-model="charAt" />
   <button ng-click="hai()">print</button>
+  <br/>
   <textarea ng-model="parsed" rows="20" cols="140"></textarea>
 </form>
 </body>
